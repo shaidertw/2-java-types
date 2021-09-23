@@ -6,17 +6,20 @@ public class Task14 {
     public static int reverse(int value) {
 
         // TODO напишите здесь код, переставляющий цифры числа в обратном порядке
-
-        return 0;
+        int reverseValue=0;
+        while(value>0){
+            reverseValue *= 10;
+            reverseValue += value % 10;
+            value/=10;
+        }
+        return reverseValue;
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
-        int result = reverse(345);
+
+        int result = reverse(100000023);
         System.out.println(result);
-         */
+
     }
 
 
